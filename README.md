@@ -13,9 +13,9 @@
 ### 3. 安裝Firebase Crashlytics SDK
 
 * 複製SDK網址`https://github.com/firebase/firebase-ios-sdk`[[網址](https://firebase.google.com/docs/crashlytics/get-started?platform=ios)]
+* ![複製SDK](./image/fig.3-1.png)
 * 在Xcode Swift Packages搜尋列貼上SDK網址, 執行搜尋
 * 找到`firebase-ios-sdk`, 並點擊`Add Package`
-* ![複製SDK](./image/fig.3-1.png)
 * ![新增SDK](./image/fig.3-2.png)
 
 * 選擇要安裝的`FirebaseAnalytics`, `FirebaseCrashlytics`套件, 並點擊`Add Package`
@@ -27,7 +27,7 @@
 
 ### 4. 確認Analytics與Crashlytics套件是否加入專案Target
 
-* 在Xcode前往Target`Build Phases`頁面
+* 在Xcode前往專案`Build Phases`頁面
 * 展開`Link Binary With Libraries`項目, 檢查是否有Analytics與Crashlytics套件
 * ![檢查是否有Analytics與Crashlytics套件](./image/fig.4.png)
 
@@ -38,14 +38,14 @@
 
 ### 6. 設定Debug Information Format
 
-* 在Xcode前往Target`Build Settings`頁面, 搜尋information
+* 在Xcode前往專案`Build Settings`頁面, 搜尋information
 * 展開`Debug Information Format`選項, 將`Debug`格式調整為`DWARF with dSYM File`[[網址](https://firebase.google.com/docs/crashlytics/get-started?platform=ios#set-up-dsym-uploading)]
 * ![設定Debug Information Format](./image/fig.6.png)
 
 ### 7. 設定Run Script
 
 * [網址](https://firebase.google.com/docs/crashlytics/get-started?platform=ios#set-up-dsym-uploading)
-* 在Xcode前往Target`Build Phases`頁面
+* 在Xcode前往專案`Build Phases`頁面
 * 點擊+號, 選擇`New Run Script Phase`, 命名為`Crashlytics Script`(依個人喜好)
 * ![New Run Script Phase](./image/fig.7-1.png)
 
