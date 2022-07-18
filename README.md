@@ -12,7 +12,7 @@
 
 ### 3. 安裝Firebase Crashlytics SDK
 
-* 複製SDK網址`https://github.com/firebase/firebase-ios-sdk`[網址](https://firebase.google.com/docs/crashlytics/get-started?platform=ios)
+* 複製SDK網址`https://github.com/firebase/firebase-ios-sdk`[[網址](https://firebase.google.com/docs/crashlytics/get-started?platform=ios)]
 * 在Xcode Swift Packages搜尋列貼上SDK網址, 執行搜尋
 * 找到`firebase-ios-sdk`, 並點擊`Add Package`
 * ![複製SDK](./image/fig.3-1.png)
@@ -36,14 +36,15 @@
 * 程式碼加入`FirebaseApp.configure()`
 * ![Firebase Configure](./image/fig.5.png)
 
-### 6. 設定Debug Information Format[網址](https://firebase.google.com/docs/crashlytics/get-started?platform=ios#set-up-dsym-uploading)
+### 6. 設定Debug Information Format
 
 * 在Xcode前往Target`Build Settings`頁面, 搜尋information
-* 展開`Debug Information Format`選項, 將`Debug`格式調整為`DWARF with dSYM File`
+* 展開`Debug Information Format`選項, 將`Debug`格式調整為`DWARF with dSYM File`[[網址](https://firebase.google.com/docs/crashlytics/get-started?platform=ios#set-up-dsym-uploading)]
 * ![設定Debug Information Format](./image/fig.6.png)
 
-### 7. 設定Run Script[網址](https://firebase.google.com/docs/crashlytics/get-started?platform=ios#set-up-dsym-uploading)
+### 7. 設定Run Script
 
+* [網址](https://firebase.google.com/docs/crashlytics/get-started?platform=ios#set-up-dsym-uploading)
 * 在Xcode前往Target`Build Phases`頁面
 * 點擊+號, 選擇`New Run Script Phase`, 命名為`Crashlytics Script`(依個人喜好)
 * ![New Run Script Phase](./image/fig.7-1.png)
@@ -54,6 +55,6 @@
 
 ### 8. 測試崩潰程式碼與日誌記錄結果
 
-* 寫一段會崩潰的程式碼[網址](https://firebase.google.com/docs/crashlytics/get-started?platform=ios#force-test-crash), 並運行程式碼
-* 等待幾分鐘, 前往Firebase Crashlytics頁面[網址](https://console.firebase.google.com/project/_/crashlytics), 觀看是否收到崩潰日誌
+* 寫一段會崩潰的程式碼[[網址](https://firebase.google.com/docs/crashlytics/get-started?platform=ios#force-test-crash)], 並運行程式碼
+* 等待幾分鐘, 前往Firebase Crashlytics頁面[[網址](https://console.firebase.google.com/project/_/crashlytics)], 觀看是否收到崩潰日誌
 * ![測試結果](./image/fig.8.png)
